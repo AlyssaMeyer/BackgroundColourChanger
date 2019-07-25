@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Background Colour Changer</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <button id="button">Change Colour</button>
+    <script type="text/javascript">
+
+    document.getElementById("button").addEventListener("click", function(){
+      var r = Math.floor(Math.random()*256);          // Random between 0-255
+      var g = Math.floor(Math.random()*256);          // Random between 0-255
+      var b = Math.floor(Math.random()*256);          // Random between 0-255
+      var rgb = 'rgb(' + r + ',' + g + ',' + b + ')';
+      document.body.style.backgroundColor=rgb;
+    });
+
+    </script>
+  </body>
+</html>
